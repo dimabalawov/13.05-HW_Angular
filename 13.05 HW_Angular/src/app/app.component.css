@@ -1,0 +1,17 @@
+.block
+{
+    margin-top: 1em;
+    font-size: 1.2em;
+    width: 20em;
+    font-weight: bold;
+}
+.buttons
+{
+    display: flex;
+    gap:2em;
+}
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;        
+  }

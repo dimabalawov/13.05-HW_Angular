@@ -1,0 +1,20 @@
+<main>
+  <div>
+  <div class="buttons">
+    <button (click)="selectedButton = 1">Автомобиль</button>
+    <button (click)="selectedButton = 2">Самолет</button>
+    <button (click)="selectedButton = 3">Корабль</button>
+  </div>
+  <div [ngSwitch]="selectedButton">
+    <div class="block" *ngSwitchCase="1">
+      {{texts[0] | uppercase}}
+    </div>
+    <div class="block" *ngSwitchCase="2">
+      {{texts[1] | lowercase}}
+    </div>
+    <div class="block" *ngSwitchCase="3">
+      {{texts[2]}}
+    </div>
+  </div>
+</div>
+</main>
